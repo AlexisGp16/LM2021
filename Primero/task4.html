@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <meta name="title" content="Vans">
+    <meta name="description" content="Compra las novedades de la última gama en zapatillas, ropa y mochilas para hombre, mujer y niño en Vans. Envío y Devolución GRATIS en España.">
+    <meta name="keywords" content="Ropa, zapatillas, vans Sevilla, zapatos, ropa nueva">
+    <meta name="robots" content="Index, Follow">
+    <meta http-equiv="Expires" content="Fri, 27 Nov 2020 23:59:59 GMT">
+    <meta name="language" content="ES">
+    <meta http-equiv="Refresh" content="30">
+    <meta name="twitter:title" content="Vans Sevilla">
+    <meta name="twitter:description" content="In '66, the Van Doren Rubber Company opened up for business in California. Within a few years,the whole skate culture adopted Vans shoe as their favourite brand">
+    <meta name="twitter:site" content="@Vans_Spain">
+    <meta name="twitter:creator" content="@alexis">
+    <meta name="author" content="Alexis">
+</head>
+<body>
+    <div style="width: 200px; margin: 0px auto;">
+        <fieldset>  
+            <legend>Formulario Trabajo</legend>
+         <form action="registro.php" method="POST">
+ 
+             <table>
+                 <tr>
+                     <td>
+                         <label for="nombre">Nombre</label>
+                     </td>    
+                     <td>
+                         <input type="text" 
+                             name="nombre"
+                             id="nombre"
+                             placeholder="Escriba aquí"
+                             autofocus
+                             size="50"
+                             maxlength="50"
+                             required>
+                         </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="apellido">Apellidos</label>
+                    </td>    
+                    <td>
+                        <input type="text" 
+                            name="apellido"
+                            id="apellido"
+                            placeholder="Escriba aquí"
+                            size="50"
+                            maxlength="50"
+                            required>
+                        </td>
+                    
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="edad">Edad</label>
+                    </td>
+                    <td>
+                        <input type="number" name="edad" id="edad" max="65" min="18" required/>
+                    </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <label for="direccion">Dirección</label>
+                     </td>
+                     <td>
+                         <input type="text"
+                                name="direccion"
+                                id="direccion"
+                                size= "50"
+                                required>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <label for="localidades">Localidades</label>
+                     </td>
+                     <td>
+                         <select name="localidades" id="localidades">
+                            <option value="0">Seleccione Localidad</option>
+                            <option value="41" selected>Sevilla</option>
+                            <option value="42">Camas</option>
+                            <option value="43">La Rinconada</option>
+                            <option value="44">Sanlucar La Mayor</option>
+                            <option value="45">Aznalcóllar</option>
+                         </select>
+                     </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="numero">Teléfono</label>
+                    </td>
+                    <td>
+                        <input type="tel"
+                               name="numero"
+                               id="numero"
+                               size= "50"
+                               maxlength="9"
+                               pattern="[0-9]{9}"
+                               required>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="pregunta">¿Has trabajado antes?</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="pregunta"
+                        id="pregunta" value="S" checked><span>Sí</span>
+                        <input type="radio" name="pregunta"
+                        id="pregunta" value="N"><span>No</span>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="fecha">Última vez trabajado</label>
+                    </td>
+                    <td>
+                        <input type="date" name="fecha1" id="fecha1" />
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="redesociales">Redes Sociales</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="twitter" id="twitter" value="T" checked /><span>Twitter</span>
+                        <input type="checkbox" name="facebook" id="facebook" value="F" /><span>Facebook</span>
+                        <input type="checkbox" name="pinterest" id="pinterest" value="P" /><span>Pinterest</span>
+                        <input type="checkbox" name="linkedin" id="linkedin" value="L" /><span>Linkedin</span>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="descripcion">Descríbete</label>
+                    </td>
+                    <td>
+                        <textarea name="descripcion" id="descripcion" cols="50" rows="10" maxlength="20" required></textarea>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <label for="email">Correo Electrónico</label>
+                    </td>
+                    <td>
+                        <input name="email" name="email" id="email" size="50" required />
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </td>
+                 </tr>
+    
+</body>
+</html>
