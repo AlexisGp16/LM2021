@@ -99,3 +99,7 @@ input:checked {
 a[target= blank] {
     font-weight: bold;
 }
+
+:not(p) {
+    text-decoration: overline;
+}
