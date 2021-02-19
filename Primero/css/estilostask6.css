@@ -1,0 +1,97 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 40px;
+    color: gray;
+    background: gainsboro;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+}
+h1 {
+    color: gray;
+    text-align: right;
+    font-size: 30px;
+    margin-right: 40px;
+    font-style: italic;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div {
+    width: 600px;
+    height: 470px;
+    border: 1px solid grey;
+    border-radius: 50px 5px 50px 5px;
+    box-shadow: 2px 2px 2px black;
+}
+#articulo1 {
+    background: cyan;
+}
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+p {
+    text-align: justify;
+    padding: 5px;
+    font-size: 24px;
+    
+}
+p#abajo {
+    font-style: italic;
+}
+#articulo2 {
+    background: yellow;
+}
+#articulo3 {
+    background: orange;
+}
+img {
+    width: 150px;
+    height: 100px;
+    display:block;
+    margin:auto;
+}
+footer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#articulo4 {
+    width: 100%;
+    height: 470px;
+    background: grey;
+    justify-content: center;
+}
+#articulo5 {
+    width: 90%;
+    height: 330px;
+    padding: 10px;
+    margin-left: 100px;
+    background: lightgray;
+}
+p#aficiones{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+p#aficion{
+    font-size: 21px;
+    text-align: justify;
+}
+p#video{
+    text-align: center;
+}
+footer#linea {
+    background: black;
+    color: white;
+}
