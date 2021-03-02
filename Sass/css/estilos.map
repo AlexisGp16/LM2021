@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "estilos.css",
+	"sources": [
+		"../scss/estilos.scss",
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\r\n\r\n\r\n$bg-color: #df0174;\r\n$size: 1em;\r\n\r\nbody {\r\n    background-color: $bg-color;\r\n    margin: $size * 2;\r\n}\r\n\r\n#main {\r\n    width: 97%;\r\n    p, div {\r\n        font-size: 20px;\r\n        a{\r\n            text-decoration: none;\r\n        }\r\n    }\r\n    span {\r\n        font-size: 22px;\r\n    }\r\n}\r\n\r\na {\r\n    font-weight: bold;\r\n    &:hover {\r\n        text-decoration: none;\r\n    }\r\n}\r\n\r\n#main {\r\n    color: blue;\r\n    &-lateral {\r\n        color: green;\r\n    }\r\n}\r\n// Comentario de una línea\r\n.parrafo {\r\n    font: {\r\n        family: fantasy;\r\n        size: 20px;\r\n        weight: bold;\r\n    }\r\n}\r\n\r\n/* Estos es un comentario\r\n* que saldría\r\n* al final\r\n*/\r\n\r\np {\r\n    color: $color-texto;\r\n}\r\n\r\n@mixin tipo_enlace {\r\n    color: blue;\r\n    text-decoration: none;\r\n}\r\n\r\n#capa {\r\n    a{\r\n        @include tipo_enlace;\r\n    }\r\n}\r\n\r\n@mixin borde_capa($size: 2px) {\r\n    border-radius: $size;\r\n}\r\n\r\n#capa1 {\r\n    @include borde_capa(4px)\r\n}\r\n\r\n$ciudad: Sevilla;\r\n\r\nspan {\r\n    @if $ciudad == Sevilla {\r\n        color: white;\r\n    } @else if $ciudad == Cadiz {\r\n        color: yellow;\r\n    } @else {\r\n        color: black;\r\n    }\r\n}\r\n\r\n@for $i from 1 to 4 {\r\n    .capa-#{$i} {border: 2px solid black}\r\n}",
+		"$color-texto: #ffffff;\r\n\r\n"
+	],
+	"names": [],
+	"mappings": ";;AAMA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAJT,OAAO;EAKd,MAAM,EAAE,GAAS;CACpB;;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,GAAG;CAUb;;;AAXD,AAEI,KAFC,CAED,CAAC,EAFL,KAAK,CAEE,GAAG,CAAC;EACH,SAAS,EAAE,IAAI;CAIlB;;;AAPL,AAIQ,KAJH,CAED,CAAC,CAEG,CAAC,EAJT,KAAK,CAEE,GAAG,CAEF,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;CACxB;;;AANT,AAQI,KARC,CAQD,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;CAClB;;;AAGL,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,IAAI;CAIpB;;;AALD,AAEI,CAFH,AAEI,MAAM,CAAC;EACJ,eAAe,EAAE,IAAI;CACxB;;;AAGL,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;CAId;;;AAHI,AAAD,aAAS,CAAC;EACN,KAAK,EAAE,KAAK;CACf;;;AAGL,AAAA,QAAQ,CAAC;EAED,WAAM,EAAE,OAAO;EACf,SAAI,EAAE,IAAI;EACV,WAAM,EAAE,IAAI;CAEnB;;AAED;;;EAGE;;AAEF,AAAA,CAAC,CAAC;EACE,KAAK,ECpDK,OAAO;CDqDpB;;;AAOD,AACI,KADC,CACD,CAAC,CAAA;EALD,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,IAAI;CAMpB;;;AAOL,AAAA,MAAM,CAAC;EAHH,aAAa,EAIO,GAAG;CAC1B;;;AAID,AAAA,IAAI,CAAC;EAEG,KAAK,EAAE,KAAK;CAMnB;;;AAGG,AAAA,OAAO,CAAK;EAAC,MAAM,EAAE,eAAe;CAAE;;;AAAtC,AAAA,OAAO,CAAK;EAAC,MAAM,EAAE,eAAe;CAAE;;;AAAtC,AAAA,OAAO,CAAK;EAAC,MAAM,EAAE,eAAe;CAAE"
+}

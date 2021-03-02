@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* line 7, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+body {
+  background-color: #df0174;
+  margin: 2em;
+}
+
+/* line 12, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#main {
+  width: 97%;
+}
+
+/* line 14, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#main p, #main div {
+  font-size: 20px;
+}
+
+/* line 16, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#main p a, #main div a {
+  text-decoration: none;
+}
+
+/* line 20, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#main span {
+  font-size: 22px;
+}
+
+/* line 25, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+a {
+  font-weight: bold;
+}
+
+/* line 27, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 32, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#main {
+  color: blue;
+}
+
+/* line 34, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#main-lateral {
+  color: green;
+}
+
+/* line 39, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+.parrafo {
+  font-family: fantasy;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Estos es un comentario
+* que saldría
+* al final
+*/
+/* line 52, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+p {
+  color: #ffffff;
+}
+
+/* line 62, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#capa a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* line 71, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+#capa1 {
+  border-radius: 4px;
+}
+
+/* line 77, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+span {
+  color: white;
+}
+
+/* line 88, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+.capa-1 {
+  border: 2px solid black;
+}
+
+/* line 88, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+.capa-2 {
+  border: 2px solid black;
+}
+
+/* line 88, ../../../Documents/LM2021/Sass/scss/estilos.scss */
+.capa-3 {
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=estilos.css.map */
