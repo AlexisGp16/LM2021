@@ -1,0 +1,37 @@
+h2, span {
+    font-style: italic;
+}
+#datos {
+    background: grey;
+    color: black
+}
+div > span {
+    font-weight: bold;
+}
+
+.segundo :active{
+    color: red;
+}
+
+.segundo ::first-letter{
+    font-size: xx-small;
+}
+
+a[href$=".com"] {
+    color:blue;
+}
+a[href$=".es"]{
+    color: red;
+}
+ul li:first-child{
+    background: grey;
+}
+li#enlace1 :hover{
+    font-size: xx-large;
+}
+li#enlace2 :hover{
+    font-size: xx-large;
+}
+#lista :hover{
+    font-size: xx-small;
+}
