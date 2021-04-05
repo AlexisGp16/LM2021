@@ -1,0 +1,89 @@
+@import "variables";
+
+
+$bg-color: #df0174;
+$size: 1em;
+
+body {
+    background-color: $bg-color;
+    margin: $size * 2;
+}
+
+#main {
+    width: 97%;
+    p, div {
+        font-size: 20px;
+        a{
+            text-decoration: none;
+        }
+    }
+    span {
+        font-size: 22px;
+    }
+}
+
+a {
+    font-weight: bold;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#main {
+    color: blue;
+    &-lateral {
+        color: green;
+    }
+}
+// Comentario de una línea
+.parrafo {
+    font: {
+        family: fantasy;
+        size: 20px;
+        weight: bold;
+    }
+}
+
+/* Estos es un comentario
+* que saldría
+* al final
+*/
+
+p {
+    color: $color-texto;
+}
+
+@mixin tipo_enlace {
+    color: blue;
+    text-decoration: none;
+}
+
+#capa {
+    a{
+        @include tipo_enlace;
+    }
+}
+
+@mixin borde_capa($size: 2px) {
+    border-radius: $size;
+}
+
+#capa1 {
+    @include borde_capa(4px)
+}
+
+$ciudad: Sevilla;
+
+span {
+    @if $ciudad == Sevilla {
+        color: white;
+    } @else if $ciudad == Cadiz {
+        color: yellow;
+    } @else {
+        color: black;
+    }
+}
+
+@for $i from 1 to 4 {
+    .capa-#{$i} {border: 2px solid black}
+}
