@@ -34,3 +34,56 @@ function mostrarFrase() {
     }
     document.getElementById("resultadoFrase").innerHTML = texto;
 }
+
+function calcularPotencia() {
+    var base = document.getElementById("base").value;
+    var exponente = document.getElementById("exponente").value;
+
+    var potencia = Math.pow(base,exponente);
+
+    document.getElementById("potencia").innerHTML = base + "^" + exponente + "=" + potencia;
+}
+
+function calcularIMC() {
+    var peso = document.getElementById("peso").value;
+    var talla = document.getElementById("talla").value;
+
+    var imc = peso / Math.pow(talla,2);
+    var mensaje = "";
+    if (imc < 18.5){
+        mensaje = " Tienes un peso insuficiente "
+    } else if (imc >= 18.5 && imc <= 24.9){
+        mensaje = " Tiene normopeso "
+    } else if (imc >= 25 && imc <= 26.9){
+        mensaje = " Tiene sobrepeso grado 1"
+    } else if (imc >= 27 && imc <= 29.9){
+        mensaje = " Tienes preobesidad"
+    } else if (imc >= 30 && imc <= 34.9){
+        mensaje = " Tienes obesidad de tipo 1"
+    } else if (imc >= 35 && imc <= 39.9){
+        mensaje = " Tienes obesidad de tipo 2"
+    } else if (imc >= 40 && imc <= 49.9){
+        mensaje = " Tienes obesidad mórbida"
+    } else {
+        mensaje = " extrema"
+    }
+    
+    document.getElementById("imc").innerHTML = "Tienes un peso de " + peso + "kg" + " y una altura de " + talla + "m " + "su imc será " + imc + mensaje;
+}
+
+var aleatorio = parseInt (Math.random() * 10);
+var intentos = 3;
+function adivinanza() {
+    var numero = document.getElementById("numero").value;
+    var mensaje = "";
+    if ( numero == aleatorio){
+        mensaje = "Genial has acertado el número"
+    } else if ( numero > aleatorio){
+        mensaje = "El número que buscas es menor"
+        
+    } else {
+        mensaje = "El número que buscas es mayor"
+    }
+
+    document.getElementById("adivino").innerHTML = mensaje;
+}
