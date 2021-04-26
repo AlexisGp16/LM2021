@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 07</title>
+    <script src="funciones.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        .oculto { display: none; }
+        .visible { display: inline; }
+    </style>
+
+</head>
+<body>
+    <span>
+        Crea un script que pida al usuario que escriba por 
+        pantalla un texto. Transforme el texto en un array de 
+        letras minúsculas (para facilitar la solución del 
+        ejercicio). Recorra todo el array en búsqueda de 
+        cada tipo de vocal a, e, i, o, u. Recorra todo el 
+        array contabilizando espacios en blanco. Finalmente 
+        el script debe escribir por pantallas todos y cada 
+        uno de los textos y devolver el texto tratado según 
+        la imagen a continuación.
+    </span>
+    <table>
+        <tr>
+            <td><label for="texto">Texto</label></td>
+            <td><input type="text" name="texto" id="texto"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="Transformar Texto" 
+                onclick="transformarTexto(document.getElementById('texto').value)" autofocus></td>
+        </tr>
+    </table>
+    <span id="resultadoTexto"></span>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+        Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl 
+        arcu, consequat congue, commodo nec, commodo ultricies, 
+        turpis. Quisque sapien nunc, posuere vitae, rutrum et, 
+        luctus at, pede. Pellentesque massa ante, ornare id, 
+        aliquam vitae, ultrices porttitor, pede.
+        <span id="adicional" class="oculto">
+            Nullam sit amet nisl elementum elit convallis malesuada. 
+            Phasellus magna sem, semper quis, faucibus ut, rhoncus 
+            non, mi. Duis pellentesque, felis eu adipiscing 
+            ullamcorper, odio urna consequat arcu, at posuere 
+            ante quam non dolor. Lorem ipsum dolor sit amet, 
+            consectetuer adipiscing elit. Duis scelerisque. 
+            Donec lacus neque, vehicula in, eleifend vitae, 
+            venenatis ac, felis. Donec arcu. Nam sed tortor 
+            nec ipsum aliquam ullamcorper. Duis accumsan metus 
+            eu urna. Aenean vitae enim. Integer lacus. Vestibulum 
+            venenatis erat eu odio. Praesent id metus.
+        </span>
+    </p>
+    <a id="enlace" href="#" onclick="muestra()">Ampliar</a>
+    <a id="enlaceR" href="#" onclick="reducir()" class="oculto">Reducir</a>
+
+    <span>
+        Definir una función que muestre información sobre una 
+        cadena de texto que se le pasa como argumento. A partir 
+        de la cadena que se le pasa, la función determina si esa 
+        cadena está formada sólo por mayúsculas, sólo por minúsculas 
+        o por una mezcla de ambas.
+    </span>
+    <table>
+        <tr>
+            <td><label for="cadena">Cadena</label></td>
+            <td><input type="text" name="cadena" id="cadena"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="Comprobar Cadena" 
+                onclick="comprobarCadena(document.getElementById('cadena').value)" autofocus></td>
+        </tr>
+    </table>
+    <span id="resultadoCadena"></span>
+</body>
+</html>
