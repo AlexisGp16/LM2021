@@ -70,5 +70,61 @@
     <div>
         <span id="resultadoFrase"></span>
     </div>
+
+    <p>
+        Calcular exponente
+    </p>
+    <table>
+        <tr>
+            <td><label for="base">Base</label></td>
+            <td><input type="number" name="base" id="base"></td>
+        </tr>
+        <tr>
+            <td><label for="exponente">Exponente</label></td>
+            <td><input type="number" name="exponente" id="exponente"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Calcular" onclick="calcularPotencia()"></td>
+        </tr>
+    </table>
+    <div>
+        <span id="potencia"></span>
+    </div>
+
+    <p>
+        El IMC se utiliza para clasificar el estado ponderal de la persona, y se calcula a partir de la fórmula: peso(kg)/talla(m2).
+    </p>
+    <table>
+        <tr>
+            <td><label for="peso">Peso (kg)</label></td>
+            <td><input type="number" name="peso" id="peso"></td>
+        </tr>
+        <tr>
+            <td><label for="talla">Talla (m)</label></td>
+            <td><input type="number" name="talla" id="talla"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Calcular" onclick="calcularIMC()"></td>
+        </tr>
+    </table>
+    <div>
+        <span id="imc"></span>
+    </div>
+
+    <p>
+        Debes realizar un juego para adivinar un número entre 1 y 10.
+    </p>
+    <table>
+        <tr>
+            <td><label for="numero">Dime un numero del 1 al 10</label></td>
+            <td><input type="number" name="numero" id="numero"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Comprobar" onclick="adivinanza()"></td>
+        </tr>
+    </table>
+    <div>
+        <span id="adivino"></span>
+    </div>
 </body>
 </html>

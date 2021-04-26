@@ -1,0 +1,32 @@
+section {
+    display: flex;
+}
+div {
+    text-align: center;
+}
+img {
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+}
+.card-text {
+    font-size: 28px;
+}
+.card-title {
+    color: cadetblue;
+    padding-bottom: 5px;
+}
+#arriba {
+    height: auto;
+    width: 100px;
+    position: absolute;
+    left: 320px;
+}
+
+#abajo {
+    height: auto;
+    width: 100px;
+    position: absolute;
+    left: 50px;
+    top: 510px;
+}
