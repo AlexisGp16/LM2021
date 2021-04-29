@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 3</title>
+    <script type="text/javascript" src="js/examen3.js"></script>
+</head>
+<body>
+    <div style="width: 50%;float: left;">
+        <form action="" method="GET" name="nombreFormulario" onsubmit="return validarFormulario()">
+            <table>
+                <tr>
+                    <td><label for="correo">Correo</label></td>
+                    <td><input type="email" name="correo" id="correo"></td>
+                </tr>
+                <tr>
+                    <td><label for="web">Web</label></td>
+                    <td><input type="url" name="web" id="web"></td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Edad</label></td>
+                    <td><input type="number" name="edad" id="edad" size="3" maxlength="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass1">Contraseña</label></td>
+                    <td><input type="password" name="pass1" id="pass1"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass2">Repite Contraseña</label></td>
+                    <td><input type="password" name="pass2" id="pass2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="capaerrores" style="width: 50%;float: left;color: red;visibility: hidden;">
+        <h3>Errores</h3>
+        <span id="errores"></span>
+    </div>
+    <table id="borde">
+        <tr>
+        <td><input type="button" value="Genera un borde" onclick="genera_borde()"></td>
+        </tr>
+        <tr>
+        <td><input type="button" value="Quita el borde" onclick="quita_borde()"></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <div style="width: 50%;float: right;">
+    <table>
+        <caption>CALCULADORA 1</caption>
+        <tr>
+            <td>
+                <label for="num1">Nº 1</label>
+            </td>
+            <td>
+                <input type="number" name="num1" id="num1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num2">Nº 2</label>
+            </td>
+            <td>
+                <input type="number" name="num2" id="num2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num3">Nº 3</label>
+            </td>
+            <td>
+                <input type="number" name="num3" id="num3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num4">Nº 4</label>
+            </td>
+            <td>
+                <input type="number" name="num4" id="num4">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Calcular" onclick="calcular()"></td>
+        </tr>
+    </table>
+    <span id="resultadoTexto"></span>
+    </div>
+</body>
+</html>
